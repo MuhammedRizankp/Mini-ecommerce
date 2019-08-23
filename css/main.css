@@ -46,7 +46,7 @@ body, html {
 }
 
 /*---------------------------------------------*/
-a {
+a{
 	font-family: Poppins-Regular;
 	font-size: 14px;
 	line-height: 1.7;
@@ -109,6 +109,7 @@ iframe {
 	border: none !important;
 }
 
+
 /*//////////////////////////////////////////////////////////////////
 [ utility ]*/
 
@@ -138,15 +139,6 @@ iframe {
 
 /*==================================================================
 [ Size ]*/
-.size1 {
-  width: 355px;
-  max-width: 100%;
-  height: 355px;;
-}
-
-.size2 {
-  width: calc(100% - 43px);
-}
 
 
 /*//////////////////////////////////////////////////////////////////
@@ -169,7 +161,7 @@ iframe {
   justify-content: center;
   align-items: center;
   padding: 15px;
-  background: #f2f2f2;
+  background:#f2f2f2;
 }
 
 .wrap-login100 {
@@ -219,7 +211,7 @@ iframe {
 
 .login100-form {
   width: 50%;
-  margin-top: 200px;
+  margin-top: 60px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
@@ -227,20 +219,38 @@ iframe {
   display: flex;
   flex-wrap: wrap;
   
-  padding: 0px 65px 40px 65px;
+  padding: 0px 0px 0px 65px;
 }
 
-.login100-form-title {
+.tablinks {
   font-family: Poppins-Regular;
-  font-size: 20px;
+  font-size: 27px;
+  display: inline-block;
   color: #555555;
-  line-height: 1.2;
   text-transform: uppercase;
-  letter-spacing: 2px;
-  text-align: center;
-
+  margin-top: -12px;
+  
+  
+  display: inline-block;
+  height: auto;
+  
   width: 100%;
-  display: block;
+ 
+  
+}
+#signin{
+  margin-top: 1.7cm;
+}
+#signup{
+  margin-top: -2cm;
+  
+}
+#in{ float: left;width:50%;
+  padding-left: .3cm;
+  
+}
+#up{ float: left;;width:50%;
+  padding-left: 2cm; 
 }
 
 
@@ -252,6 +262,8 @@ iframe {
   width: 100%;
   position: relative;
   border: 1px solid #e6e6e6;
+  margin-top: 1cm;
+  
 }
 
 .rs1-wrap-input100,
@@ -363,7 +375,12 @@ input.input100 {
   background: #333333;
   
 }
-
+.butto{
+background-color: #00ad5f;
+border-radius: 20px;
+width: 80px;
+height: 40px;
+margin-top: 20px;}
 
 
 
@@ -391,6 +408,7 @@ input.input100 {
 
   .login100-more {
     width: 100%;
+    
   }
 }
 
