@@ -29,18 +29,20 @@
 </head>
 <body>
 		<script>
-				function tabchange(evnt,tabname){
-				 var i,tablinks,tabcontent;
+				function tabchange(tabname,idl){
+				 var i,tablinks,tabcontent,idl;
 				 tabcontent=document.getElementsByClassName("tabcontent");
+				
 				 for(i=0;i<tabcontent.length;i++){
 				   tabcontent[i].style.display="none";}
 				 
 				 tablinks=document.getElementsByClassName("tablinks");
-				 for(i=0;i<tablinks.length;i++){onclick="underline('signin')"
-				   tablinks[i].className=tablinks[i].className.replace("active");
+				 for (i = 0; i < tablinks.length; i++) {
+                  tablinks[i].className = tablinks[i].className.replace(" active", "");
+  
 				 }
 			  document.getElementById(tabname).style.display="block";
-			  
+			 
 			  }
 			  function input(text){
 				var tex;
@@ -56,8 +58,8 @@
 			<div class="wrap-login100">
 				<form class="login100-form validate-form">
 					<div class="tab">
-						<button class="tablinks" onclick="tabchange(event,'signin')" id="in">SIGN IN</button>
-						<button class="tablinks" onclick="tabchange(event,'signup')" id="up">SIGNUP</button>
+						<button class="tablinks" onclick="tabchange('signin','in')" id="in">SIGN IN</button>
+						<button class="tablinks" onclick="tabchange('signup','up')" id="up">SIGNUP</button>
 						
 					</div>
 					<div id="signin" class="tabcontent">
@@ -70,7 +72,7 @@
 									<span class="focus-input100"></span>
 								</div>
 						   
-								<button class="butto">Sign In</button>
+								<button class="butto" onclick="window.location.href='/page3.html'">Sign In</button>
 						<br>
 						<div class="w-full text-center p-t-27 p-b-239">
 								<span class="txt1">
@@ -100,7 +102,7 @@
 									<span class="focus-input100"></span>
 								</div>
 						   
-						   <button class="butto">Sign Up</button>
+						   <button class="butto" onclick="window.location.href='/index.html'">Sign Up</button>
 							 
 						  
 						  
